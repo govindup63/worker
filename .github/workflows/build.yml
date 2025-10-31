@@ -37,17 +37,17 @@ jobs:
           apiVersion: kro.run/v1alpha1
           kind: MCP
           metadata:
-            name: kamini
+            name: shivansh
             namespace: hackman-hackathon
           spec:
-            name: kamini
+            name: shivansh
             image: govindup63/plane:${{ github.sha }}
             replicas: 1
             namespace: hackman-hackathon
             containerPort: 8080
             ingress:
               enabled: true
-              url: swift-panda-106.ghstmail.me
+              url: cyber-griffin-571.ghstmail.me
               path: /
               pathType: Prefix
           EOF
@@ -62,5 +62,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "actions@github.com"
           git add .
-          git commit -m "Add MCP config for kamini-${{ github.sha }}"
+          git commit -m "Add MCP config for shivansh-${{ github.sha }}"
           git push https://${GH_PAT}@github.com/govindup63/mcps.git main || echo "Nothing to push"
