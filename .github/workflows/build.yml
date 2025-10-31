@@ -47,7 +47,7 @@ jobs:
             containerPort: 8080
             ingress:
               enabled: true
-              url: https://emerald-lion-620.ghstmail.me
+              url: https://quantum-dolphin-247.ghstmail.me
               path: /
               pathType: Prefix
           EOF
