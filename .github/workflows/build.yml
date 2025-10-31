@@ -47,7 +47,7 @@ jobs:
             containerPort: 8080
             ingress:
               enabled: true
-              url: https://quantum-dolphin-247.ghstmail.me
+              url: stellar-wolf-480.ghstmail.me
               path: /
               pathType: Prefix
           EOF
