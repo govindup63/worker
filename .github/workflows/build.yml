@@ -37,17 +37,17 @@ jobs:
           apiVersion: kro.run/v1alpha1
           kind: MCP
           metadata:
-            name: noble-bear-459
+            name: emerald-raven-922
             namespace: hackman-hackathon
           spec:
-            name: noble-bear-459
+            name: emerald-raven-922
             image: govindup63/plane:${{ github.sha }}
             replicas: 1
             namespace: hackman-hackathon
             containerPort: 8080
             ingress:
               enabled: true
-              url: noble-bear-459.ghstmail.me
+              url: emerald-raven-922.ghstmail.me
               path: /
               pathType: Prefix
           EOF
@@ -62,5 +62,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "actions@github.com"
           git add .
-          git commit -m "Add MCP config for noble-bear-459-${{ github.sha }}"
+          git commit -m "Add MCP config for emerald-raven-922-${{ github.sha }}"
           git push https://${GH_PAT}@github.com/govindup63/mcps.git main || echo "Nothing to push"
