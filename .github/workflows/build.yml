@@ -37,17 +37,17 @@ jobs:
           apiVersion: kro.run/v1alpha1
           kind: MCP
           metadata:
-            name: silver-shark-883
+            name: swift-falcon-687
             namespace: hackman-hackathon
           spec:
-            name: silver-shark-883
+            name: swift-falcon-687
             image: govindup63/plane:${{ github.sha }}
             replicas: 1
             namespace: hackman-hackathon
             containerPort: 8080
             ingress:
               enabled: true
-              url: silver-shark-883.ghstmail.me
+              url: swift-falcon-687.ghstmail.me
               path: /
               pathType: Prefix
           EOF
@@ -62,5 +62,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "actions@github.com"
           git add .
-          git commit -m "Add MCP config for silver-shark-883-${{ github.sha }}"
+          git commit -m "Add MCP config for swift-falcon-687-${{ github.sha }}"
           git push https://${GH_PAT}@github.com/govindup63/mcps.git main || echo "Nothing to push"
