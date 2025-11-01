@@ -12,4 +12,4 @@ ENV MCP_TRANSPORT=sse
 ENV MCP_HOST=0.0.0.0
 ENV MCP_PORT=8080
 # Run the server
-CMD ["python","server.py"]
+CMD ["npm","start"]
